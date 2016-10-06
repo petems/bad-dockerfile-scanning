@@ -132,9 +132,6 @@ COPY rpmsquirt.sh /rpmsquirt.sh
 COPY rpmsquirt.dat /
 RUN /rpmsquirt.sh
 
-## Git commit check
-CMD echo 'Hello' && /bin/false
-
 # Precautionary failure with messages
 #
 CMD echo 'Vulnerable image' && /bin/false
